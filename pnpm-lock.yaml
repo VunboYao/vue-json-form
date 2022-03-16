@@ -15,7 +15,6 @@ specifiers:
   babel-jest: ^27.0.6
   core-js: ^3.8.3
   eslint: ^7.32.0
-  eslint-config-prettier: ^8.3.0
   eslint-plugin-prettier: ^4.0.0
   eslint-plugin-vue: ^8.0.3
   jest: ^27.0.5
@@ -44,8 +43,7 @@ devDependencies:
   '@vue/vue3-jest': 27.0.0-alpha.4_632eedbaea76a0196fa0e80e6100f81e
   babel-jest: 27.5.1
   eslint: 7.32.0
-  eslint-config-prettier: 8.5.0_eslint@7.32.0
-  eslint-plugin-prettier: 4.0.0_cfc9253cc6cf8e63ed6f63a6b600e6b9
+  eslint-plugin-prettier: 4.0.0_eslint@7.32.0+prettier@2.5.1
   eslint-plugin-vue: 8.5.0_eslint@7.32.0
   jest: 27.5.1
   lint-staged: 11.2.6
@@ -4335,16 +4333,7 @@ packages:
       source-map: 0.6.1
     dev: true
 
-  /eslint-config-prettier/8.5.0_eslint@7.32.0:
-    resolution: {integrity: sha512-obmWKLUNCnhtQRKc+tmnYuQl0pFU1ibYJQ5BGhTVB08bHe9wC8qUeG7c08dj9XX+AuPj1YSGSQIHl1pnDHZR0Q==}
-    hasBin: true
-    peerDependencies:
-      eslint: '>=7.0.0'
-    dependencies:
-      eslint: 7.32.0
-    dev: true
-
-  /eslint-plugin-prettier/4.0.0_cfc9253cc6cf8e63ed6f63a6b600e6b9:
+  /eslint-plugin-prettier/4.0.0_eslint@7.32.0+prettier@2.5.1:
     resolution: {integrity: sha512-98MqmCJ7vJodoQK359bqQWaxOE0CS8paAz/GgjaZLyex4TTk3g9HugoO89EqWCrFiOqn9EVvcoo7gZzONCWVwQ==}
     engines: {node: '>=6.0.0'}
     peerDependencies:
@@ -4356,7 +4345,6 @@ packages:
         optional: true
     dependencies:
       eslint: 7.32.0
-      eslint-config-prettier: 8.5.0_eslint@7.32.0
       prettier: 2.5.1
       prettier-linter-helpers: 1.0.0
     dev: true
