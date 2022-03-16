@@ -33,7 +33,8 @@
     "lint-staged": "^11.1.2",
     "prettier": "^2.4.1",
     "ts-jest": "^27.0.4",
-    "typescript": "~4.5.5"
+    "typescript": "~4.5.5",
+    "unplugin-auto-import": "^0.6.6"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
