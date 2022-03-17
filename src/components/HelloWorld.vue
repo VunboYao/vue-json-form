@@ -13,7 +13,7 @@ const PropsType = {
 } as const
 export default defineComponent({
   props: PropsType,
-  setup(prop) {
+  setup() {
     return {}
   },
   mounted() {
