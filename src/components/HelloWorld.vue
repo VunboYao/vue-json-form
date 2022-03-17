@@ -1,19 +1,25 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>{{ year }}</h2>
+    {{ age }}
   </div>
 </template>
-
-<script lang="ts" setup>
-defineProps<{
-  foo: string
-  msg: string
-  bar?: number
-}>()
-defineEmits(['change', 'update'])
-const year = ref<number>(2020)
-year.value = 1994
+<script lang="ts">
+const PropsType = {
+  age: {
+    type: Number,
+    required: true
+  },
+  msg: String
+} as const
+export default defineComponent({
+  props: PropsType,
+  setup(prop) {
+    return {}
+  },
+  mounted() {
+    console.log(this.age)
+  }
+})
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
