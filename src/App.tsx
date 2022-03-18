@@ -21,7 +21,7 @@ export default defineComponent({
           />
           <h1>{msg}</h1>
           <h1>
-            {msg > 20 ? renderHello(number.value) : ''}
+            {msg > 21 ? renderHello(number.value) : ''}
             <input
               type="text"
               v-model={number.value}
