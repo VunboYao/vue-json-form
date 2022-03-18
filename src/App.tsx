@@ -2,7 +2,7 @@
 const src = require('./assets/logo.png')
 import HelloWorld from './components/HelloWorld.vue'
 
-function renderHello(num:number) {
+function renderHello(num: number) {
   return <HelloWorld age={num} />
 }
 export default defineComponent({
@@ -15,14 +15,20 @@ export default defineComponent({
 
       return (
         <div>
-          <img src={src} alt="Vue Logo" />
+          <img
+            src={src}
+            alt="Vue Logo"
+          />
           <h1>{msg}</h1>
           <h1>
             {msg > 20 ? renderHello(number.value) : ''}
-            <input type="text" v-model={number.value} />
+            <input
+              type="text"
+              v-model={number.value}
+            />
           </h1>
-        </div> 
+        </div>
       )
     }
-  },
+  }
 })

@@ -1,21 +1,19 @@
 <template>
   <img
     alt="Vue logo"
-    src="./assets/logo.png"
-  >
-  <HelloWorld :age="12" />
+    src="./assets/logo.png" />
+  <HelloWorld :age="24" />
 </template>
 
 <script lang="ts">
-import HelloWorld from "./components/HelloWorld.vue"
+import HelloWorld from './components/HelloWorld.vue'
 export default defineComponent({
   components: {
-    HelloWorld,
+    HelloWorld
   },
   setup(props, other) {
-    return {
-    }
-  },
+    return {}
+  }
 })
 </script>
 
