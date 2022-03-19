@@ -9,11 +9,11 @@
 import HelloWorld from './components/HelloWorld.vue'
 export default defineComponent({
   components: {
-    HelloWorld
+    HelloWorld,
   },
   setup(props, other) {
     return {}
-  }
+  },
 })
 </script>
 
