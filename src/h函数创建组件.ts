@@ -3,9 +3,8 @@ import HelloWorld from './components/HelloWorld.vue'
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const src = require('./assets/logo.png')
 
-
 const App = defineComponent({
-  setup(){
+  setup() {
     const number = ref(10)
     setInterval(() => {
       number.value++
@@ -16,12 +15,12 @@ const App = defineComponent({
       const msg = number.value
 
       return h('div', [
-        h('img', { alt: 'Vue Logo', src}),
+        h('img', { alt: 'Vue Logo', src }),
         h('h1', msg),
-        h(HelloWorld, {age: msg})
+        h(HelloWorld, { age: msg }),
       ])
     }
-  }
+  },
 })
 
 createApp(App).mount('#app')
