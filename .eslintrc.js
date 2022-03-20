@@ -2,7 +2,7 @@ module.exports = {
   root: true,
   env: {
     node: true,
-    'vue/setup-compiler-macros': true
+    'vue/setup-compiler-macros': true,
   },
   parser: 'vue-eslint-parser',
   extends: [
@@ -12,14 +12,14 @@ module.exports = {
     './.eslintrc-auto-import.json',
     // 'eslint:recommended',
     'plugin:prettier/recommended',
-    '@vue/typescript/recommended'
+    '@vue/typescript/recommended',
   ],
   parserOptions: {
     ecmaVersion: 2020,
     parser: '@typescript-eslint/parser',
     ecmaFeatures: {
-      jsx: true
-    }
+      jsx: true,
+    },
   },
   rules: {
     'prettier/prettier': 'error',
@@ -29,33 +29,33 @@ module.exports = {
       'error',
       {
         singleline: {
-          max: 1
+          max: 1,
         },
         multiline: {
-          max: 1
-        }
-      }
+          max: 1,
+        },
+      },
     ],
     // 单行属性时，不换行
     'vue/first-attribute-linebreak': [
       'error',
       {
-        singleline: 'beside'
-      }
+        singleline: 'beside',
+      },
     ],
     semi: ['error', 'never'],
     'arrow-parens': ['error', 'always'], // 箭头函数必须括号
-    'vue/comment-directive': 'off' // 去掉html的检测
+    'vue/comment-directive': 'off', // 去掉html的检测
   },
   overrides: [
     {
       files: [
         '**/__tests__/*.{j,t}s?(x)',
-        '**/tests/unit/**/*.spec.{j,t}s?(x)'
+        '**/tests/unit/**/*.spec.{j,t}s?(x)',
       ],
       env: {
-        jest: true
-      }
-    }
-  ]
+        jest: true,
+      },
+    },
+  ],
 }
